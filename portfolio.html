@@ -1,0 +1,135 @@
+To create a nice looking portfolio using the provided information, you can use HTML and CSS for a simple, yet effective web page. Here's a sample code to create a portfolio:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikash Adhikari's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            font-size: 1.5em;
+            color: #555;
+            border-bottom: 2px solid #e1e1e1;
+            padding-bottom: 10px;
+        }
+        .skills ul, .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li, .projects ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #e1e1e1;
+        }
+        .experience .job {
+            margin-bottom: 15px;
+        }
+        .experience .job h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .experience .job p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bikash Adhikari</h1>
+        </header>
+        <div class="contact-info">
+            <p>Phone: (+1) 475-655-9540</p>
+            <p>Email: im.bikashadhikari@gmail.com</p>
+            <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
+        </div>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Data Analysis and Database Development: Proficient in Excel for data analysis and report development, SQL optimization, query development, and building stored procedures/functions.</li>
+                <li>Tools: SQL Tool, SQL Toad, SQL developer, Bitbucket, Confluence, JIRA, PowerBI, and Tableau</li>
+                <li>Machine Learning: Experienced in utilizing Python for data analysis and implementing machine learning techniques using sci-kit-learn (Random Forest, XGBoost, Bragging, Boosting), Deep Learning, and Natural Language Processing, Fine tune Transformer model</li>
+                <li>Programming Languages: Strong command of SQL, Oracle, PostgreSQL, Python, R-Programming</li>
+                <li>Cloud Computing: Hands-on experience with Amazon Web Services (AWS), including EC2 and S3</li>
+                <li>Big Data Platforms: Knowledge of Hadoop, Databricks, and Azure for big data processing and analytics.</li>
+            </ul>
+        </section>
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Data Scientist | Team Lead - University of New Haven (01/2024 - Present)</h3>
+                <p>Implemented an AWS EC2 instance to develop a CGPA prediction model, utilizing machine learning algorithms to achieve an impressive 85.7% accuracy rate, thereby slashing admissions application processing time by a significant 25% and demonstrating strong analytical and problem-solving abilities.</p>
+                <p>Led a team of 6 data scientists and 8 volunteers, crafting work plans and timelines. Ensured thorough documentation of codes and changes using version control methods in GitHub, ensuring traceability, and fostering collaboration, resulting in 100% on-time project deliveries.</p>
+            </div>
+            <div class="job">
+                <h3>Data Analyst - University of New Haven (07/2023 - 12/2023)</h3>
+                <p>Fostered strategic planning in admissions by employing exploratory data analysis (EDA), feature engineering, and correlation analysis. These analytical approaches unveiled a notable annual upsurge of 10% in fall semester applications.</p>
+                <p>Enhanced decision-making procedures by devising Power BI dashboards that amalgamate graduate admissions metrics and KPIs. These dashboards encapsulate application trends, acceptance rates, and demographic insights, leading to a 20% boost in application review efficiency.</p>
+            </div>
+            <div class="job">
+                <h3>Senior Software Engineer - COTIVITI Nepal (12/2016 - 07/2022)</h3>
+                <p>Leveraged 6+ years of experience working within large-volume relational healthcare data sets (PHI data) under HIPPA and Cleanroom environment, including data design and transformation using PLSQL/MySQL.</p>
+                <p>Trained new employees on the Eligibility, Claims, Pharmacy, HRA, and Wellness datasets.</p>
+                <p>Created a Master table for the National Drug Code, Diagnosis Code (ICD9/ICD10, HCPCS, CPT4), Procedure Code, and Revenue Code.</p>
+                <p>Optimized the query to reduce the processing time from 18 hours to 12 hours, resulting in a 33% improvement in overall system efficiency, as measured by the reduction in claims processing time, contributing to enhanced operational productivity and cost savings.</p>
+                <p>Demonstrated advanced knowledge of Excel (Pivot Tables, V Lookups, queries, advanced written formulas) to streamline data analysis processes, resulting in a 20% increase in data processing and reporting efficiency, as evidenced by improved data manipulation capabilities and faster decision-making.</p>
+                <p>Provided consultative support to internal and external stakeholders on various projects, including detailed claims analysis, model development, and statistical analysis, resulting in improved decision-making processes and enhanced client satisfaction, evidenced by positive feedback from stakeholders and clients.</p>
+            </div>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Sign Language Detection: Compared 'You Only Look Once (YOLO)' and 'Vision Transformer' architectures for real-time American Sign Language (ASL) detection.</li>
+                <li>Fine-tune transformer Model: Fine-tuned the Hugging face model (nllb-200-distilled-600M) to translate detected ASL into Nepali.</li>
+                <li>Heart Attack Prediction: Utilized various health indicators to predict heart attack risk using Random Forest, aiding in timely interventions.</li>
+                <li>House Price Prediction Model: Employed XGBoost to predict housing prices accurately, facilitating informed real estate decisions.</li>
+            </ul>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <p>Masters in Data Science (2022-2024) | University of New Haven, West Haven, CT, USA</p>
+            <p>Bachelors in Electronics & Communication Engineering (2012-2016) | Tribhuwan University, Nepal</p>
+        </section>
+    </div>
+</body>
+</html>
+```
+
+Save this code as an HTML file (e.g., `portfolio.html`) and open it in a web browser to view your portfolio. You can further customize the styles and layout to better suit your preferences.
