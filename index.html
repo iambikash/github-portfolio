@@ -1,27 +1,27 @@
-To create a nice looking portfolio using the provided information, you can use HTML and CSS for a simple, yet effective web page. Here's a sample code to create a portfolio:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikash Adhikari's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #ededf3;
+            color: #100e0e;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
             padding: 20px;
-            background: white;
+            background: rgb(246, 246, 246);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
         }
         header {
             text-align: center;
@@ -30,7 +30,14 @@ To create a nice looking portfolio using the provided information, you can use H
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: #333;
+            color: #1e779b;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
         }
         .contact-info {
             text-align: center;
@@ -39,97 +46,231 @@ To create a nice looking portfolio using the provided information, you can use H
         .contact-info p {
             margin: 5px 0;
         }
-        section {
-            margin-bottom: 20px;
-        }
-        section h2 {
-            font-size: 1.5em;
-            color: #555;
-            border-bottom: 2px solid #e1e1e1;
-            padding-bottom: 10px;
-        }
-        .skills ul, .projects ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills ul li, .projects ul li {
-            background: #f9f9f9;
-            margin: 5px 0;
-            padding: 10px;
-            border: 1px solid #e1e1e1;
-        }
-        .experience .job {
-            margin-bottom: 15px;
-        }
-        .experience .job h3 {
-            margin: 0;
-            font-size: 1.2em;
-        }
-        .experience .job p {
-            margin: 5px 0;
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            background-color: #3490ca;
+            color: white;
+            border-radius: 0 0 8px 8px;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <section class="header_info">
         <header>
+            <img src="Images/Bikash.jpeg" alt="Bikash Adhikari">
             <h1>Bikash Adhikari</h1>
+            <div class="contact-info">
+                <p>Phone: (+1) 475-655-9540</p>
+                <p>Email: <a href="mailto:im.bikashadhikari@gmail.com">im.bikashadhikari@gmail.com</a></p>
+                <p>LinkedIn: <a href="#https://www.linkedin.com/in/imbikashadhikari/">LinkedIn Profile</a></p>
+                <p>GitHub: <a href="https://github.com/iambikash"> GitHub Profile</a></p>
+            </div>
         </header>
-        <div class="contact-info">
-            <p>Phone: (+1) 475-655-9540</p>
-            <p>Email: im.bikashadhikari@gmail.com</p>
-            <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
-        </div>
+        </section>
+
+        <!-- Include other sections here -->
+        <!--#include file="skills.html" -->
         <section class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Data Analysis and Database Development: Proficient in Excel for data analysis and report development, SQL optimization, query development, and building stored procedures/functions.</li>
-                <li>Tools: SQL Tool, SQL Toad, SQL developer, Bitbucket, Confluence, JIRA, PowerBI, and Tableau</li>
-                <li>Machine Learning: Experienced in utilizing Python for data analysis and implementing machine learning techniques using sci-kit-learn (Random Forest, XGBoost, Bragging, Boosting), Deep Learning, and Natural Language Processing, Fine tune Transformer model</li>
-                <li>Programming Languages: Strong command of SQL, Oracle, PostgreSQL, Python, R-Programming</li>
-                <li>Cloud Computing: Hands-on experience with Amazon Web Services (AWS), including EC2 and S3</li>
-                <li>Big Data Platforms: Knowledge of Hadoop, Databricks, and Azure for big data processing and analytics.</li>
+                <li>
+                    <strong>Data Analysis and Database Development</strong>: Proficient in Excel for data analysis and report development, SQL optimization, query development, and building stored procedures/functions.
+                    <ul>
+                        <li><strong>Excel for Data Analysis and Report Development:</strong> 
+                            <ul>
+                                <li><em>Data Analysis</em>: Proficiency in using Excel for analyzing large datasets. This includes using functions, formulas, pivot tables, and charts to derive insights and make data-driven decisions.</li>
+                                <li><em>Report Development</em>: Capability to create comprehensive reports that summarize data findings. This involves using Excel's features to format data, create visualizations, and generate automated reports.</li>
+                            </ul>
+                        </li>
+                        <li><strong>SQL Optimization:</strong>
+                            <ul>
+                                <li><em>Query Optimization</em>: Skills in writing efficient SQL queries to retrieve data quickly and accurately. This includes indexing, proper use of joins, and query rewriting techniques to enhance performance.</li>
+                                <li><em>Database Performance Tuning</em>: Understanding how to optimize database performance through indexing strategies, query optimization, and hardware resource management.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Query Development:</strong>
+                            <ul>
+                                <li><em>Complex Queries</em>: Ability to develop complex SQL queries for various database operations. This includes subqueries, aggregate functions, and advanced joins to manipulate and retrieve data.</li>
+                                <li><em>Data Manipulation</em>: Expertise in using SQL for data manipulation tasks such as INSERT, UPDATE, DELETE, and SELECT operations.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Building Stored Procedures/Functions:</strong>
+                            <ul>
+                                <li><em>Stored Procedures</em>: Proficiency in creating stored procedures to encapsulate business logic within the database. This allows for reusable, maintainable, and secure database operations.</li>
+                                <li><em>Functions</em>: Skills in developing user-defined functions for modular and reusable code within SQL scripts. These functions can perform calculations, format data, and more.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Tools</strong>: 
+                    <ul>
+                        <li><strong>SQL Tool:</strong> Familiarity with various SQL tools that facilitate database management and query execution. These tools offer interfaces for writing and executing SQL queries, managing database objects, and performing administrative tasks.</li>
+                        <li><strong>SQL Toad:</strong> Experience with Toad, a comprehensive SQL development and administration tool that provides advanced features for database development, query optimization, and database management.</li>
+                        <li><strong>SQL Developer:</strong> Proficiency in using Oracle SQL Developer, an integrated development environment (IDE) for working with Oracle databases. It offers features for database design, development, and management.</li>
+                        <li><strong>Bitbucket:</strong> Experience with Bitbucket, a web-based version control repository hosting service for source code and development projects. It supports Git and Mercurial version control systems.</li>
+                        <li><strong>Confluence:</strong> Familiarity with Confluence, a collaboration tool used for creating, sharing, and collaborating on projects and documentation within teams.</li>
+                        <li><strong>JIRA:</strong> Proficiency in using JIRA, a project management and issue tracking tool. It helps in planning, tracking, and managing agile software development projects.</li>
+                        <li><strong>PowerBI:</strong> Skills in using PowerBI, a business analytics tool that provides interactive visualizations and business intelligence capabilities with an interface that allows end users to create their own reports and dashboards.</li>
+                        <li><strong>Tableau:</strong> Experience with Tableau, a data visualization tool that transforms raw data into understandable, interactive, and visually appealing dashboards and reports.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Machine Learning</strong>: Experienced in utilizing Python for data analysis and implementing machine learning techniques using sci-kit-learn (Random Forest, XGBoost, Bagging, Boosting), Deep Learning, and Natural Language Processing, Fine tune Transformer model
+                    <ul>
+                        <li><strong>Python for Data Analysis:</strong> Proficiency in using Python libraries such as pandas, numpy, and matplotlib for data cleaning, transformation, analysis, and visualization.</li>
+                        <li><strong>Implementing Machine Learning Techniques:</strong>
+                            <ul>
+                                <li><em>scikit-learn:</em> Experience with scikit-learn, a Python library for implementing machine learning algorithms such as Random Forest, XGBoost, Bagging, and Boosting for classification, regression, and clustering tasks.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Deep Learning:</strong>
+                            <ul>
+                                <li><em>Deep Learning Frameworks:</em> Knowledge of deep learning frameworks like TensorFlow and Keras for building and training neural networks for various applications such as image recognition, natural language processing, and more.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Natural Language Processing (NLP):</strong>
+                            <ul>
+                                <li><em>NLP Techniques:</em> Expertise in NLP for analyzing and understanding textual data. This includes tokenization, sentiment analysis, named entity recognition, and language modeling.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Fine-tuning Transformer Models:</strong>
+                            <ul>
+                                <li><em>Transformer Models:</em> Experience in fine-tuning transformer models such as BERT, GPT, and models from the Hugging Face library for specific NLP tasks like text classification, translation, and summarization.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Programming Languages</strong>: Strong command of SQL, Oracle, PostgreSQL, Python, R-Programming
+                    <ul>
+                        <li><strong>SQL:</strong> Strong command of SQL for database querying, data manipulation, and transaction management across different database systems.</li>
+                        <li><strong>Oracle:</strong> Proficiency in Oracle's database management system, including PL/SQL programming for developing complex database applications.</li>
+                        <li><strong>PostgreSQL:</strong> Experience with PostgreSQL, an open-source relational database management system known for its robustness and SQL compliance.</li>
+                        <li><strong>Python:</strong> Strong skills in Python for general-purpose programming, data analysis, and scripting.</li>
+                        <li><strong>R-Programming:</strong> Proficiency in R for statistical computing and graphics. It is widely used for data analysis, statistical modeling, and data visualization.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Cloud Computing</strong>: Hands-on experience with Amazon Web Services (AWS), including EC2 and S3
+                    <ul>
+                        <li><strong>Amazon Web Services (AWS):</strong>
+                            <ul>
+                                <li><em>EC2:</em> Hands-on experience with Amazon EC2 (Elastic Compute Cloud) for scalable computing capacity. This includes launching, configuring, and managing virtual servers.</li>
+                                <li><em>S3:</em> Proficiency in using Amazon S3 (Simple Storage Service) for scalable object storage, data backup, and content delivery.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Big Data Platforms</strong>: Knowledge of Hadoop, Databricks, and Azure for big data processing and analytics.
+                    <ul>
+                        <li><strong>Hadoop:</strong> Knowledge of Hadoop, an open-source framework for distributed storage and processing of large data sets across clusters of computers. This includes familiarity with HDFS (Hadoop Distributed File System) and MapReduce.</li>
+                        <li><strong>Databricks:</strong> Experience with Databricks, a unified data analytics platform built on Apache Spark. It provides collaborative notebooks, integrated workflows, and advanced analytics capabilities.</li>
+                        <li><strong>Azure:</strong> Knowledge of Azure, Microsoft's cloud computing platform, specifically its services for big data processing and analytics. This includes Azure HDInsight (a managed Hadoop service) and Azure Databricks.</li>
+                    </ul>
+                </li>
             </ul>
         </section>
+        
+        <!--#include file="experience.html" -->
         <section class="experience">
             <h2>Experience</h2>
+            <ul>
             <div class="job">
-                <h3>Data Scientist | Team Lead - University of New Haven (01/2024 - Present)</h3>
-                <p>Implemented an AWS EC2 instance to develop a CGPA prediction model, utilizing machine learning algorithms to achieve an impressive 85.7% accuracy rate, thereby slashing admissions application processing time by a significant 25% and demonstrating strong analytical and problem-solving abilities.</p>
-                <p>Led a team of 6 data scientists and 8 volunteers, crafting work plans and timelines. Ensured thorough documentation of codes and changes using version control methods in GitHub, ensuring traceability, and fostering collaboration, resulting in 100% on-time project deliveries.</p>
+                <h3>Data Scientist | Team Lead</h3>
+                <h4>University of New Haven (01/2024 - 05/2024)</h4>
+                <ul>
+                    <li>Implemented an AWS EC2 instance to develop a CGPA prediction model, utilizing machine learning algorithms to achieve an impressive 85.7% accuracy rate, thereby slashing admissions application processing time by a significant 25% and demonstrating strong analytical and problem-solving abilities.</li>
+                    <li>Led a team of 6 data scientists and 8 volunteers, crafting work plans and timelines. Ensured thorough documentation of codes and changes using version control methods in GitHub, ensuring traceability, and fostering collaboration, resulting in 100% on-time project deliveries.</li>
+                </ul>
             </div>
             <div class="job">
-                <h3>Data Analyst - University of New Haven (07/2023 - 12/2023)</h3>
-                <p>Fostered strategic planning in admissions by employing exploratory data analysis (EDA), feature engineering, and correlation analysis. These analytical approaches unveiled a notable annual upsurge of 10% in fall semester applications.</p>
-                <p>Enhanced decision-making procedures by devising Power BI dashboards that amalgamate graduate admissions metrics and KPIs. These dashboards encapsulate application trends, acceptance rates, and demographic insights, leading to a 20% boost in application review efficiency.</p>
+                <h3>Data Analyst</h3>
+                <h4>University of New Haven (07/2023 - 12/2023)</h4>
+                <ul>
+                    <li>Fostered strategic planning in admissions by employing exploratory data analysis (EDA), feature engineering, and correlation analysis. These analytical approaches unveiled a notable annual upsurge of 10% in fall semester applications.</li>
+                    <li>Enhanced decision-making procedures by devising Power BI dashboards that amalgamate graduate admissions metrics and KPIs. These dashboards encapsulate application trends, acceptance rates, and demographic insights, leading to a 20% boost in application review efficiency.</li>
+                </ul>
             </div>
             <div class="job">
-                <h3>Senior Software Engineer - COTIVITI Nepal (12/2016 - 07/2022)</h3>
-                <p>Leveraged 6+ years of experience working within large-volume relational healthcare data sets (PHI data) under HIPPA and Cleanroom environment, including data design and transformation using PLSQL/MySQL.</p>
-                <p>Trained new employees on the Eligibility, Claims, Pharmacy, HRA, and Wellness datasets.</p>
-                <p>Created a Master table for the National Drug Code, Diagnosis Code (ICD9/ICD10, HCPCS, CPT4), Procedure Code, and Revenue Code.</p>
-                <p>Optimized the query to reduce the processing time from 18 hours to 12 hours, resulting in a 33% improvement in overall system efficiency, as measured by the reduction in claims processing time, contributing to enhanced operational productivity and cost savings.</p>
-                <p>Demonstrated advanced knowledge of Excel (Pivot Tables, V Lookups, queries, advanced written formulas) to streamline data analysis processes, resulting in a 20% increase in data processing and reporting efficiency, as evidenced by improved data manipulation capabilities and faster decision-making.</p>
-                <p>Provided consultative support to internal and external stakeholders on various projects, including detailed claims analysis, model development, and statistical analysis, resulting in improved decision-making processes and enhanced client satisfaction, evidenced by positive feedback from stakeholders and clients.</p>
+                <h3>Senior Software Engineer</h3>
+                <h4>COTIVITI Nepal (12/2016 - 07/2022)</h4>
+                <ul>
+                    <li>Leveraged 6+ years of experience working within large-volume relational healthcare data sets (PHI data) under HIPPA and Cleanroom environment, including data design and transformation using PLSQL/MySQL.</li>
+                    <li>Trained new employees on the Eligibility, Claims, Pharmacy, HRA, and Wellness datasets.</li>
+                    <li>Created a Master table for the National Drug Code, Diagnosis Code (ICD9/ICD10, HCPCS, CPT4), Procedure Code, and Revenue Code.</li>
+                    <li>Optimized the query to reduce the processing time from 18 hours to 12 hours, resulting in a 33% improvement in overall system efficiency, as measured by the reduction in claims processing time, contributing to enhanced operational productivity and cost savings.</li>
+                    <li>Demonstrated advanced knowledge of Excel (Pivot Tables, V Lookups, queries, advanced written formulas) to streamline data analysis processes, resulting in a 20% increase in data processing and reporting efficiency, as evidenced by improved data manipulation capabilities and faster decision-making.</li>
+                    <li>Provided consultative support to internal and external stakeholders on various projects, including detailed claims analysis, model development, and statistical analysis, resulting in improved decision-making processes and enhanced client satisfaction, evidenced by positive feedback from stakeholders and clients.</li>
+                </ul>
             </div>
+            </ul>
         </section>
+        
+        <!--#include file="projects.html" -->
         <section class="projects">
             <h2>Projects</h2>
             <ul>
-                <li>Sign Language Detection: Compared 'You Only Look Once (YOLO)' and 'Vision Transformer' architectures for real-time American Sign Language (ASL) detection.</li>
-                <li>Fine-tune transformer Model: Fine-tuned the Hugging face model (nllb-200-distilled-600M) to translate detected ASL into Nepali.</li>
-                <li>Heart Attack Prediction: Utilized various health indicators to predict heart attack risk using Random Forest, aiding in timely interventions.</li>
-                <li>House Price Prediction Model: Employed XGBoost to predict housing prices accurately, facilitating informed real estate decisions.</li>
+                <li>
+                    <strong>Sign Language Detection:</strong> 
+                    Compared 'You Only Look Once (YOLO)' and 'Vision Transformer' architectures for real-time American Sign Language (ASL) detection.
+                    <ul>
+                        <li>Utilized YOLO architecture for its real-time object detection capabilities, enabling fast and accurate identification of ASL gestures.</li>
+                        <li>Explored Vision Transformer architecture for its potential to enhance detection accuracy by leveraging attention mechanisms to focus on relevant parts of the image.</li>
+                        <li>Implemented and tested both architectures to compare their performance in terms of detection speed and accuracy, optimizing for real-time application scenarios.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Fine-tune Transformer Model:</strong> 
+                    Fine-tuned the Hugging Face model (nllb-200-distilled-600M) to translate detected ASL into Nepali.
+                    <ul>
+                        <li>Selected the nllb-200-distilled-600M model from Hugging Face for its multilingual capabilities and robust performance in translation tasks.</li>
+                        <li>Performed fine-tuning of the pre-trained model using a custom dataset of ASL to Nepali translations to improve accuracy and contextual relevance.</li>
+                        <li>Implemented the model in a translation pipeline to convert detected ASL gestures into Nepali text, enabling communication across language barriers.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Heart Attack Prediction:</strong> 
+                    Utilized various health indicators to predict heart attack risk using Random Forest, aiding in timely interventions.
+                    <ul>
+                        <li>Gathered and preprocessed a dataset containing health indicators such as age, cholesterol levels, blood pressure, and other relevant features.</li>
+                        <li>Implemented a Random Forest classifier to analyze the relationships between these health indicators and heart attack risk, providing a predictive model.</li>
+                        <li>Evaluated model performance using metrics such as accuracy, precision, and recall, optimizing the model to ensure reliable predictions and early interventions.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>House Price Prediction Model:</strong> 
+                    Employed XGBoost to predict housing prices accurately, facilitating informed real estate decisions.
+                    <ul>
+                        <li>Collected and cleaned a dataset of housing prices along with features such as location, size, number of rooms, and other relevant attributes.</li>
+                        <li>Utilized XGBoost, an efficient gradient boosting algorithm, to build a regression model that predicts housing prices based on the given features.</li>
+                        <li>Optimized the model using techniques such as hyperparameter tuning and cross-validation to enhance predictive accuracy and generalization to unseen data.</li>
+                    </ul>
+                </li>
             </ul>
         </section>
+        
+        
+        <!--#include file="education.html" -->
         <section class="education">
             <h2>Education</h2>
-            <p>Masters in Data Science (2022-2024) | University of New Haven, West Haven, CT, USA</p>
-            <p>Bachelors in Electronics & Communication Engineering (2012-2016) | Tribhuwan University, Nepal</p>
+            <ul>
+                <li>
+                    <strong>Masters in Data Science</strong> (2022-2024) | University of New Haven, West Haven, CT, USA
+                </li>
+                <li>
+                    <strong>Bachelors in Electronics & Communication Engineering</strong> (2012-2016) | Tribhuwan University, Nepal
+                </li>
+            </ul>
         </section>
+        
     </div>
+    <footer>
+        <p>&copy; 2024 Bikash Adhikari. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-```
-
-Save this code as an HTML file (e.g., `portfolio.html`) and open it in a web browser to view your portfolio. You can further customize the styles and layout to better suit your preferences.
