@@ -150,7 +150,17 @@
             margin: 0 auto;
             padding: 20px;
         }
-
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         .timeline {
             position: relative;
             padding: 20px 0;
@@ -326,10 +336,65 @@
         .education-icon img {
             width: 80%;
         }
+
         .header_info {
             left: auto;
             width: auto;
             justify-content: center;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header-info {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid white;
+            transition: transform 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+
+        .header-name {
+            font-size: 2.5em;
+            margin: 0;
+            padding: 0;
+            transition: color 0.3s ease;
+        }
+
+        .header-name:hover {
+            color: #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
     </style>
@@ -338,9 +403,9 @@
     <div class="container">
         <section class="header_info">
             <header>
-                <div class = "header-info">
-                <img src="Images/Bikash.jpeg" alt="Bikash Adhikari">
-                <h1>Bikash Adhikari</h1>
+                <div class="header-info">
+                    <img src="Images/Bikash.jpeg" alt="Bikash Adhikari" class="profile-image">
+                    <h1 class="header-name">Bikash Adhikari</h1>
                 </div>
             </header>
             <div class="contact-info">
