@@ -135,6 +135,197 @@
             height: 100px; /* Adjust height as needed */
             background-color: #f0f0f0; /* Example background color */
         }
+
+        .about-me {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: auto;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .experience {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            list-style: none;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #C5C5C5;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            background: #C5C5C5;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-content {
+            position: relative;
+            width: 45%;
+            padding: 20px;
+            background: #F5F5F5;
+            border-radius: 6px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            left: 55%;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            left: 0;
+        }
+
+        .timeline-item h3 {
+            margin-top: 0;
+        }
+
+        .timeline-item ul {
+            padding-left: 20px;
+        }
+
+        .timeline-item ul li {
+            margin-bottom: 10px;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #FFF;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .timeline-icon img {
+            width: 70%;
+        }
+
+        .education {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .education-timeline {
+            position: relative;
+            padding: 20px 0;
+            list-style: none;
+        }
+
+        .education-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #C5C5C5;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .education-item {
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .education-item::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            background: #C5C5C5;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .education-content {
+            position: relative;
+            width: 45%;
+            padding: 20px;
+            background: #F5F5F5;
+            border-radius: 6px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .education-item:nth-child(odd) .education-content {
+            left: 55%;
+        }
+
+        .education-item:nth-child(even) .education-content {
+            left: 0;
+        }
+
+        .education-content:hover {
+            background: #e0e0e0;
+            transform: translateY(-5px);
+        }
+
+        .education-item h3 {
+            margin-top: 0;
+        }
+
+        .education-item p {
+            margin: 0;
+        }
+
+        .education-icon {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #FFF;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .education-icon img {
+            width: 80%;
+        }
     </style>
 </head>
 <body>
@@ -150,6 +341,42 @@
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/imbikashadhikari/">LinkedIn Profile</a></p>
                 <p>GitHub: <a href="https://github.com/iambikash">GitHub Profile</a></p>
             </div>
+        </section>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                I am Bikash Adhikari, a passionate data scientist and software engineer with a proven track record in data analysis, machine learning, and database development. I hold extensive experience in leveraging advanced analytical techniques to drive business insights and optimize performance. I am proficient in multiple programming languages and tools, and I thrive in collaborative environments where innovative problem-solving is key.
+            </p>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <strong>Data Analysis and Report Development</strong>: Proficient in Excel for analyzing large datasets and creating comprehensive reports using functions, formulas, pivot tables, and charts.
+                </li>
+                <li>
+                    <strong>SQL Optimization and Query Development</strong>: Skilled in writing efficient SQL queries, optimizing database performance, and developing complex queries for data manipulation tasks.
+                </li>
+                <li>
+                    <strong>Stored Procedures and Functions</strong>: Expertise in creating stored procedures and user-defined functions for reusable, maintainable, and secure database operations.
+                </li>
+                <li>
+                    <strong>Tools</strong>: Familiar with various SQL tools, SQL Toad, SQL Developer, Bitbucket, Confluence, JIRA, PowerBI, and Tableau for database management, project collaboration, and data visualization.
+                </li>
+                <li>
+                    <strong>Machine Learning and Data Analysis</strong>: Experienced in Python for data analysis and implementing machine learning algorithms using scikit-learn, deep learning frameworks like TensorFlow and Keras, and natural language processing techniques.
+                </li>
+                <li>
+                    <strong>Programming Languages</strong>: Strong command of SQL, Oracle (PL/SQL), PostgreSQL, Python, and R-Programming for database querying, data analysis, statistical computing, and scripting.
+                </li>
+                <li>
+                    <strong>Cloud Computing</strong>: Hands-on experience with Amazon Web Services (AWS), specifically EC2 for scalable computing capacity and S3 for scalable object storage and data backup.
+                </li>
+                <li>
+                    <strong>Big Data Platforms</strong>: Knowledgeable in Hadoop, Databricks, and Azure for big data processing and analytics, including distributed storage and collaborative data analytics platforms.
+                </li>
+            </ul>
         </section>
         
         
@@ -205,6 +432,7 @@
         
         <!-- Include other sections here -->
         <!--#include file="skills.html" -->
+        <!--
         <section class="skills">
             <h2>Skills</h2>
             <ul>
@@ -307,40 +535,54 @@
                 </li>
             </ul>
         </section>
-        
+        -->
         <!--#include file="experience.html" -->
         <section class="experience">
             <h2>Experience</h2>
-            <ul>
-            <div class="job">
-                <h3>Data Scientist | Team Lead</h3>
-                <h4>University of New Haven (01/2024 - 05/2024)</h4>
-                <ul>
-                    <li>Implemented an AWS EC2 instance to develop a CGPA prediction model, utilizing machine learning algorithms to achieve an impressive 85.7% accuracy rate, thereby slashing admissions application processing time by a significant 25% and demonstrating strong analytical and problem-solving abilities.</li>
-                    <li>Led a team of 6 data scientists and 8 volunteers, crafting work plans and timelines. Ensured thorough documentation of codes and changes using version control methods in GitHub, ensuring traceability, and fostering collaboration, resulting in 100% on-time project deliveries.</li>
-                </ul>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="Images/UNH.png" alt="University Icon">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Data Scientist | Team Lead</h3>
+                        <h4>University of New Haven (01/2024 - 05/2024)</h4>
+                        <ul>
+                            <li>Implemented an AWS EC2 instance to develop a CGPA prediction model, achieving 85.7% accuracy and reducing admissions application processing time by 25%.</li>
+                            <li>Led a team of 6 data scientists and 8 volunteers, ensuring thorough documentation and 100% on-time project deliveries.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="Images/UNH logo.png" alt="University Icon">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Data Analyst</h3>
+                        <h4>University of New Haven (07/2023 - 12/2023)</h4>
+                        <ul>
+                            <li>Conducted exploratory data analysis, feature engineering, and correlation analysis to reveal a 10% annual increase in fall semester applications.</li>
+                            <li>Developed Power BI dashboards that improved application review efficiency by 20%.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="Images/Cotiviti.png" alt="Company Icon">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer</h3>
+                        <h4>COTIVITI Nepal (12/2016 - 07/2022)</h4>
+                        <ul>
+                            <li>Worked with large-volume relational healthcare data sets, including data design and transformation using PLSQL/MySQL.</li>
+                            <li>Trained new employees and created master tables for various codes (ICD9/ICD10, HCPCS, CPT4, etc.).</li>
+                            <li>Optimized queries, reducing processing time by 33% and increasing system efficiency.</li>
+                            <li>Used advanced Excel techniques to improve data processing and reporting efficiency by 20%.</li>
+                            <li>Provided consultative support on projects, improving decision-making and client satisfaction.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="job">
-                <h3>Data Analyst</h3>
-                <h4>University of New Haven (07/2023 - 12/2023)</h4>
-                <ul>
-                    <li>Fostered strategic planning in admissions by employing exploratory data analysis (EDA), feature engineering, and correlation analysis. These analytical approaches unveiled a notable annual upsurge of 10% in fall semester applications.</li>
-                    <li>Enhanced decision-making procedures by devising Power BI dashboards that amalgamate graduate admissions metrics and KPIs. These dashboards encapsulate application trends, acceptance rates, and demographic insights, leading to a 20% boost in application review efficiency.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Senior Software Engineer</h3>
-                <h4>COTIVITI Nepal (12/2016 - 07/2022)</h4>
-                <ul>
-                    <li>Leveraged 6+ years of experience working within large-volume relational healthcare data sets (PHI data) under HIPPA and Cleanroom environment, including data design and transformation using PLSQL/MySQL.</li>
-                    <li>Trained new employees on the Eligibility, Claims, Pharmacy, HRA, and Wellness datasets.</li>
-                    <li>Created a Master table for the National Drug Code, Diagnosis Code (ICD9/ICD10, HCPCS, CPT4), Procedure Code, and Revenue Code.</li>
-                    <li>Optimized the query to reduce the processing time from 18 hours to 12 hours, resulting in a 33% improvement in overall system efficiency, as measured by the reduction in claims processing time, contributing to enhanced operational productivity and cost savings.</li>
-                    <li>Demonstrated advanced knowledge of Excel (Pivot Tables, V Lookups, queries, advanced written formulas) to streamline data analysis processes, resulting in a 20% increase in data processing and reporting efficiency, as evidenced by improved data manipulation capabilities and faster decision-making.</li>
-                    <li>Provided consultative support to internal and external stakeholders on various projects, including detailed claims analysis, model development, and statistical analysis, resulting in improved decision-making processes and enhanced client satisfaction, evidenced by positive feedback from stakeholders and clients.</li>
-                </ul>
-            </div>
-            </ul>
         </section>
         
         <!--#include file="projects.html" -->
@@ -349,15 +591,30 @@
         <!--#include file="education.html" -->
         <section class="education">
             <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Masters in Data Science</strong> (2022-2024) | University of New Haven, West Haven, CT, USA
-                </li>
-                <li>
-                    <strong>Bachelors in Electronics & Communication Engineering</strong> (2012-2016) | Tribhuwan University, Nepal
-                </li>
-            </ul>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <img src="Images/UNH.png" alt="University of New Haven">
+                    </div>
+                    <div class="education-content">
+                        <h3>Masters in Data Science</h3>
+                        <h4>2022-2024</h4>
+                        <p>University of New Haven, West Haven, CT, USA</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <img src="Images/TU.png" alt="Tribhuwan University">
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelors in Electronics & Communication Engineering</h3>
+                        <h4>2012-2016</h4>
+                        <p>Tribhuwan University, Nepal</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        
         
     </div>
     <footer>
